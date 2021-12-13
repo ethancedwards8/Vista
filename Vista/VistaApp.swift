@@ -11,7 +11,7 @@ import SwiftUI
 struct VistaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Landing()
         }
     }
 }

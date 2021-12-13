@@ -7,16 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		543268B52766F7C800DDFC48 /* WordInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543268B42766F7C800DDFC48 /* WordInfo.swift */; };
+		546AD3AC2766C441008F8D36 /* SpanishDictApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546AD3AB2766C441008F8D36 /* SpanishDictApi.swift */; };
+		546AD3AF2766CAB8008F8D36 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 546AD3AE2766CAB8008F8D36 /* SwiftSoup */; };
+		546AD3B62766DD9B008F8D36 /* DisplayWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546AD3B52766DD9B008F8D36 /* DisplayWord.swift */; };
+		546F4FDD276697480017C0E1 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546F4FDC276697480017C0E1 /* Types.swift */; };
 		54DFB186276689DE00844AC1 /* VistaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFB185276689DE00844AC1 /* VistaApp.swift */; };
-		54DFB188276689DE00844AC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFB187276689DE00844AC1 /* ContentView.swift */; };
+		54DFB188276689DE00844AC1 /* Landing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFB187276689DE00844AC1 /* Landing.swift */; };
 		54DFB18A276689E000844AC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54DFB189276689E000844AC1 /* Assets.xcassets */; };
 		54DFB18D276689E000844AC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54DFB18C276689E000844AC1 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		543268B42766F7C800DDFC48 /* WordInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordInfo.swift; sourceTree = "<group>"; };
+		546AD3AB2766C441008F8D36 /* SpanishDictApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpanishDictApi.swift; sourceTree = "<group>"; };
+		546AD3B52766DD9B008F8D36 /* DisplayWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayWord.swift; sourceTree = "<group>"; };
+		546F4FDC276697480017C0E1 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		54DFB182276689DE00844AC1 /* Vista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DFB185276689DE00844AC1 /* VistaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaApp.swift; sourceTree = "<group>"; };
-		54DFB187276689DE00844AC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		54DFB187276689DE00844AC1 /* Landing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landing.swift; sourceTree = "<group>"; };
 		54DFB189276689E000844AC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54DFB18C276689E000844AC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -26,12 +35,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				546AD3AF2766CAB8008F8D36 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		546AD3B22766DCBF008F8D36 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				54DFB187276689DE00844AC1 /* Landing.swift */,
+				546AD3B52766DD9B008F8D36 /* DisplayWord.swift */,
+				543268B42766F7C800DDFC48 /* WordInfo.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		546AD3B32766DCF3008F8D36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				546F4FDC276697480017C0E1 /* Types.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		546AD3B42766DCFD008F8D36 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				546AD3AB2766C441008F8D36 /* SpanishDictApi.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
 		54DFB179276689DE00844AC1 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				54DFB185276689DE00844AC1 /* VistaApp.swift */,
-				54DFB187276689DE00844AC1 /* ContentView.swift */,
+				546AD3B22766DCBF008F8D36 /* Views */,
+				546AD3B32766DCF3008F8D36 /* Model */,
+				546AD3B42766DCFD008F8D36 /* APIs */,
 				54DFB189276689E000844AC1 /* Assets.xcassets */,
 				54DFB18B276689E000844AC1 /* Preview Content */,
 			);
@@ -83,6 +121,9 @@
 			dependencies = (
 			);
 			name = Vista;
+			packageProductDependencies = (
+				546AD3AE2766CAB8008F8D36 /* SwiftSoup */,
+			);
 			productName = Vista;
 			productReference = 54DFB182276689DE00844AC1 /* Vista.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,9 @@
 				Base,
 			);
 			mainGroup = 54DFB179276689DE00844AC1;
+			packageReferences = (
+				546AD3AD2766CAB8008F8D36 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 54DFB183276689DE00844AC1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54DFB188276689DE00844AC1 /* ContentView.swift in Sources */,
+				546F4FDD276697480017C0E1 /* Types.swift in Sources */,
+				546AD3B62766DD9B008F8D36 /* DisplayWord.swift in Sources */,
+				54DFB188276689DE00844AC1 /* Landing.swift in Sources */,
+				543268B52766F7C800DDFC48 /* WordInfo.swift in Sources */,
 				54DFB186276689DE00844AC1 /* VistaApp.swift in Sources */,
+				546AD3AC2766C441008F8D36 /* SpanishDictApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +389,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		546AD3AD2766CAB8008F8D36 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		546AD3AE2766CAB8008F8D36 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 546AD3AD2766CAB8008F8D36 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 54DFB17A276689DE00844AC1 /* Project object */;
 }
